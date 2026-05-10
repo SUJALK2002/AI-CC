@@ -1,0 +1,78 @@
+1. Open browser and visit:
+   https://www.awseducate.com/
+
+2. Click Sign In and login using AWS Educate account credentials.
+
+3. After login, click AWS Account.
+
+4. Click AWS Console to open AWS Management Console.
+
+5. In the top search bar, type S3 and select Amazon S3 service.
+
+6. Amazon S3 Dashboard opens.
+
+7. Click Create Bucket.
+
+8. Under Bucket Name, enter a unique bucket name:
+   my-s3-bucket-demo
+
+9. Under AWS Region, select desired region.
+
+10. Under Object Ownership, keep default settings:
+    ACLs Disabled
+
+11. Under Block Public Access settings, keep default settings enabled for security.
+
+12. Under Bucket Versioning, keep Disable selected.
+
+13. Under Default Encryption, keep Enable selected.
+
+14. Click Create Bucket.
+
+15. Wait for message:
+    "Successfully created bucket"
+
+16. Click on the created bucket name.
+
+17. Click Upload.
+
+18. Click Add Files.
+
+19. Select file from computer.
+
+20. Click Upload to upload file into S3 bucket.
+
+21. Wait until upload status shows:
+    "Upload succeeded"
+
+22. Click Close.
+
+23. Uploaded file will now appear inside the bucket.
+
+24. To view file properties, click the uploaded file name.
+
+25. To download the file:
+    - Select the file
+    - Click Download
+
+26. To make file public (optional):
+    - Select file
+    - Click Actions
+    - Choose Make Public using ACL
+
+27. To delete file:
+    - Select file
+    - Click Delete
+    - Type permanently delete
+    - Click Delete Objects
+
+28. To delete bucket:
+    - Open bucket
+    - Delete all files inside bucket
+    - Return to bucket list
+    - Select bucket
+    - Click Delete
+    - Enter bucket name for confirmation
+    - Click Delete Bucket
+
+29. Thus, Amazon S3(Simple Storage Service) was successfully created and managed using AWS Educate.

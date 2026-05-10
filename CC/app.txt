@@ -1,0 +1,118 @@
+1. Open browser and visit:
+   https://login.salesforce.com/
+
+2. Login using Salesforce account credentials.
+
+3. After login, click Setup icon (⚙) at the top right corner.
+
+4. Click Setup.
+
+5. In the Quick Find search box, type:
+   App Manager
+
+6. Click App Manager.
+
+7. Click New Lightning App.
+
+8. Enter App Details:
+   App Name: Student Management App
+   Developer Name: Student_Management_App
+
+9. Click Next.
+
+10. Upload App Logo if required or keep default logo.
+
+11. Select App Options:
+    - Utility Bar: Optional
+    - Navigation Style: Standard Navigation
+
+12. Click Next.
+
+13. Under App Personalization, choose desired color and branding settings.
+
+14. Click Next.
+
+15. Under Navigation Items, add required objects:
+    - Accounts
+    - Contacts
+    - Reports
+    - Dashboards
+
+16. Click Next.
+
+17. Under User Profiles, select:
+    System Administrator
+
+18. Click Save & Finish.
+
+19. To create a custom object:
+    - Go to Setup
+    - Search Object Manager
+    - Click Object Manager
+    - Click Create
+    - Select Custom Object
+
+20. Enter Object Details:
+    Label: Student
+    Plural Label: Students
+    Record Name: Student Name
+
+21. Select:
+    - Allow Reports
+    - Allow Activities
+    - Track Field History
+
+22. Click Save.
+
+23. To create custom fields:
+    - Open Student Object
+    - Click Fields & Relationships
+    - Click New
+
+24. Create fields such as:
+    - Roll Number (Number)
+    - Course (Text)
+    - Email (Email)
+    - Phone Number (Phone)
+
+25. Click Save after creating each field.
+
+26. To create tabs:
+    - Open Student Object
+    - Click Create Tab
+
+27. Select Tab Style and click Next.
+
+28. Add tab to Student Management App.
+
+29. Click Save.
+
+30. Open App Launcher.
+
+31. Search:
+    Student Management App
+
+32. Open the application.
+
+33. Click Students tab.
+
+34. Click New to add student records.
+
+35. Enter student details and click Save.
+
+36. Student records will be stored successfully in Salesforce Cloud.
+
+37. To create reports:
+    - Go to Reports
+    - Click New Report
+    - Select Student Report
+    - Click Run Report
+
+38. To create dashboard:
+    - Go to Dashboards
+    - Click New Dashboard
+    - Add report components
+
+39. Save dashboard successfully.
+
+40. Thus, custom application using Salesforce Lightning Platform was successfully designed and developed.

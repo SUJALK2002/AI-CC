@@ -1,0 +1,121 @@
+1. Open browser and visit:
+   https://www.awseducate.com/
+
+2. Click Sign In and login using AWS Educate account credentials.
+
+3. After login, click AWS Account.
+
+4. Click AWS Console to open AWS Management Console.
+
+5. In the top search bar, type RDS and select Amazon RDS service.
+
+6. Amazon RDS Dashboard opens.
+
+7. Click Create Database.
+
+8. Under Choose a database creation method, select:
+   Standard Create
+
+9. Under Engine Options, choose database engine:
+   MySQL
+
+10. Under Version, keep default version selected.
+
+11. Under Templates, select:
+    Free Tier
+
+12. Under DB Instance Identifier, enter:
+    mydatabase
+
+13. Under Master Username, enter:
+    admin
+
+14. Under Credentials Management, select:
+    Self managed
+
+15. Enter Master Password and Confirm Password.
+
+16. Under DB Instance Class, keep default:
+    db.t3.micro
+    or
+    db.t2.micro
+
+17. Under Storage, keep default allocated storage:
+    20 GB
+
+18. Under Connectivity, select:
+    Default VPC
+
+19. Set Public Access to:
+    Yes
+
+20. Under VPC Security Group, choose:
+    Create New
+
+21. Under Availability Zone, keep default selection.
+
+22. Under Database Authentication, choose:
+    Password Authentication
+
+23. Expand Additional Configuration.
+
+24. Under Initial Database Name, enter:
+    studentdb
+
+25. Keep Backup and Monitoring settings as default.
+
+26. Click Create Database.
+
+27. Wait until database status changes from:
+    Creating → Available
+
+28. Select the created database instance.
+
+29. Copy the Endpoint shown in Connectivity & Security section.
+
+30. Open MySQL Workbench or any SQL client.
+
+31. Enter:
+    Hostname: RDS Endpoint
+    Port: 3306
+    Username: admin
+    Password: Your Password
+
+32. Click Test Connection.
+
+33. After successful connection, click Connect.
+
+34. Execute SQL commands:
+
+    CREATE DATABASE studentdb;
+
+35. Use database:
+
+    USE studentdb;
+
+36. Create table:
+
+    CREATE TABLE student(
+    id INT,
+    name VARCHAR(50)
+    );
+
+37. Insert values:
+
+    INSERT INTO student VALUES(1,'Rahul');
+
+38. Display table data:
+
+    SELECT * FROM student;
+
+39. Output will display inserted records successfully.
+
+40. To delete database:
+    - Select database instance
+    - Click Actions
+    - Click Delete
+    - Disable final snapshot if not required
+    - Type delete confirmation
+    - Click Delete
+
+41. Thus, Amazon RDS(Relational Database Service) was successfully created and configured using AWS Educate.

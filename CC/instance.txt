@@ -1,0 +1,92 @@
+1. Open browser and visit:
+   https://www.awseducate.com/
+
+2. Click Sign In and login using AWS Educate account credentials.
+
+3. After login, click AWS Account.
+
+4. Click AWS Console to open AWS Management Console.
+
+5. In the top search bar, type EC2 and select EC2 service.
+
+6. EC2 Dashboard opens. Click Launch Instance.
+
+7. Under Name and Tags, enter instance name:
+   MyEC2Instance
+
+8. Under Application and OS Images (AMI), select:
+   Amazon Linux 2 AMI
+   or
+   Ubuntu Server
+
+9. Under Instance Type, choose:
+   t2.micro
+   or
+   t3.micro
+
+10. Under Key Pair, click Create New Key Pair.
+
+11. Enter:
+    Key Pair Name: mykey
+    Key Pair Type: RSA
+    Private Key File Format: .pem
+
+12. Click Create Key Pair. The .pem file downloads automatically.
+
+13. Under Network Settings, click Edit.
+
+14. Configure security settings:
+    - Allow SSH traffic from Anywhere
+    - Select Allow HTTP traffic
+    - Select Allow HTTPS traffic
+
+15. Under Configure Storage, keep default storage size:
+    8 GB
+
+16. Review all configuration settings.
+
+17. Click Launch Instance.
+
+18. Wait for message:
+    "Your instance has been successfully launched."
+
+19. Click View All Instances.
+
+20. Wait until instance state changes from:
+    Pending → Running
+
+21. Select the created EC2 instance.
+
+22. Click Connect.
+
+23. Select EC2 Instance Connect.
+
+24. Click Connect to open terminal.
+
+25. Run Linux commands for testing:
+
+    sudo yum update -y
+    pwd
+    ls
+    date
+
+26. To install Apache Web Server, run:
+
+    sudo yum install httpd -y
+
+27. Start Apache server:
+
+    sudo systemctl start httpd
+
+28. Enable Apache service:
+
+    sudo systemctl enable httpd
+
+29. Copy the Public IP Address of the EC2 instance.
+
+30. Paste the IP in browser:
+    http://Public-IP
+
+31. Apache test page will open successfully.
+
+32. Thus, Amazon EC2 instance creation using AWS Educate is completed successfully.
